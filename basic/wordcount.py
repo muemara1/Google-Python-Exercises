@@ -75,13 +75,12 @@ def print_words(filename):
 def get_count(word_count_tuple):
   return word_count_tuple[1]
 
-# Print the top words
 def print_top(filename):
-  word_count = word_count_dict(filename)
-
-  # Each item is a (word, count) tuple.
-  # Sort them so the big counts are first using key=get_count() to extract count.
-  items = sorted(word_count.items(), key=get_count, reverse=True)
+    """Prints the top 20 most common words sorted by their count in descending order."""
+    word_count = read_file_and_count_words(filename)
+    most_common_words = word_count.most_common(20)
+    for word, count in most_common_words:
+        print(f"{word} {count}")
 
   # Print the first 20
   for item in items[:20]:
