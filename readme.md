@@ -37,9 +37,6 @@ E.g. `.\google-python-exercises\basic\mimic.py small.txt`
 - Run the commands in the terminal: `.\google-python-exercises\basic\babynames.py` with the `--summaryfile` arguement and file name such as `baby2008.html` or `baby1998.html`.
 E.g. `.\google-python-exercises\babynames\babynames.py --summaryfile baby2006.html`
 
-## Progress tracking
-Presentation on Machine Learning topic:
-- Winston's Wine (03.05.24):
 
 Finished excercises:
 - [x] string1.py (24.03.24)
