@@ -1,5 +1,4 @@
 # This is a repository to track the progress of Advanced Programming course, at the THD Cham.
-Author: Muhammad Emara - 12401048 - Embedded Software Engineer.
 
 ## Information about the course:
 Course name Advanced Programming.
@@ -37,17 +36,14 @@ E.g. `.\google-python-exercises\basic\mimic.py small.txt`
 - Run the commands in the terminal: `.\google-python-exercises\basic\babynames.py` with the `--summaryfile` arguement and file name such as `baby2008.html` or `baby1998.html`.
 E.g. `.\google-python-exercises\babynames\babynames.py --summaryfile baby2006.html`
 
-## Progress tracking
-Presentation on Machine Learning topic:
-- Winston's Wine (03.05.24):
 
 Finished excercises:
-- [x] string1.py (24.03.24)
-- [x] string2.py (24.03.24)
-- [x] list1.py (13.04.24)
-- [x] list2.py (13.04.24)
-- [x] wordcount.py (21.07.24)
-- [x] mimic.py (21.07.24)
-- [x] babynames.py (21.07.24)
+- [x] string1.py 
+- [x] string2.py 
+- [x] list1.py 
+- [x] list2.py 
+- [x] wordcount.py 
+- [x] mimic.py 
+- [x] babynames.py 
 - [ ] copyspecial.py
 - [ ] logpuzzle.py
