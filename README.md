@@ -18,3 +18,4 @@ These exercises were written in July 2024 as part of the Google Python Class. Th
 ## Python Version and Libraries
 - Python 3.9.6
 - No additional libraries are required for these exercises.
+-
