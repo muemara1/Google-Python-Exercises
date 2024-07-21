@@ -24,17 +24,7 @@ def match_ends(words):
     return count
 
 # B. front_x
-def front_x(words):
-    x_list = []
-    other_list = []
-    
-    for word in words:
-        if word.startswith('x'):
-            x_list.append(word)
-        else:
-            other_list.append(word)
-    
-    return sorted(x_list) + sorted(other_list)
+
 
 # C. sort_last
 def sort_last(tuples):
