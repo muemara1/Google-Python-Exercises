@@ -4,11 +4,6 @@
 
 This repository houses a comprehensive case study and all programming tasks for the Advanced Programming course, part of the M.Eng. AI for Smart Sensors and Actuators program, Summer Semester 2024. The primary goal is to demonstrate proficiency in using GitHub and to showcase my understanding and ability to manage programming tasks, each of which is submitted as separate commits.
 
-## Author
-
-**Panramon Kanhasiri (Jelly)**
-
-**Matriculation number: 12304637**
 
 ## Installation Instructions
 
