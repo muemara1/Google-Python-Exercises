@@ -38,15 +38,57 @@ print_words() and print_top().
 """
 
 import sys
+import os
 
+#====================================SOLUTION STARTS====================================
 # +++your code here+++
 # Define print_words(filename) and print_top(filename) functions.
 # You could write a helper utility function that reads a file
 # and builds and returns a word/count dict for it.
 # Then print_words() and print_top() can just call the utility function.
 
-###
+# This function opens the file and return a word/count dict
+def word_count_dict(filename):
+  word_count = {} # word_count mapping
+  
+  input_file = open(filename, encoding='utf-8')
+  for line in input_file:
+    words = line.split()
+    for word in words:
+      word = word.lower()
+      
+      # Check if we have seen this word before
+      if not word in word_count:
+        word_count[word] = 1
+      else:
+        word_count[word] = word_count[word] + 1
+  return word_count
 
+# This function print out and sort the words
+def print_words(filename):
+  word_count = word_count_dict(filename)
+  words = sorted(word_count.keys()) #Sort
+  for word in words:
+    print(word, word_count[word])
+
+# Return count tuple
+def get_count(word_count_tuple):
+  return word_count_tuple[1]
+
+# Print the top words
+def print_top(filename):
+  word_count = word_count_dict(filename)
+
+  # Each item is a (word, count) tuple.
+  # Sort them so the big counts are first using key=get_count() to extract count.
+  items = sorted(word_count.items(), key=get_count, reverse=True)
+
+  # Print the first 20
+  for item in items[:20]:
+    print(item[0], item[1])
+
+#====================================SOLUTION END====================================
+    
 # This basic command line argument parsing code is provided and
 # calls the print_words() and print_top() functions which you must define.
 def main():
@@ -63,6 +105,9 @@ def main():
   else:
     print('unknown option: ' + option)
     sys.exit(1)
+
+  # Keep the input prompt open until a key is pressed
+  input("Press Enter to exit...")
 
 if __name__ == '__main__':
   main()
