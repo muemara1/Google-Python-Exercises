@@ -27,11 +27,11 @@ Here's what the html looks like in the baby.html files:
 ...
 
 Suggested milestones for incremental development:
- -Extract the year and print it
- -Extract the names and rank numbers and just print them
- -Get the names data into a dict and print it
- -Build the [year, 'name rank', ... ] list and print it
- -Fix main() to use the extract_names list
+ - Extract the year and print it
+ - Extract the names and rank numbers and just print them
+ - Get the names data into a dict and print it
+ - Build the [year, 'name rank', ... ] list and print it
+ - Fix main() to use the extract_names list
 """
 
 def extract_names(filename):
@@ -43,30 +43,31 @@ def extract_names(filename):
     with open(filename, 'r') as file:
         content = file.read()
     
-    # Extract the year
+    # Extract the year using a regex
     year_match = re.search(r'Popularity in (\d{4})', content)
     if not year_match:
         return []
     year = year_match.group(1)
     
-    # Extract names and rank numbers
+    # Extract names and rank numbers using a regex
     tuples = re.findall(r'<tr align="right"><td>(\d+)</td><td>(\w+)</td><td>(\w+)</td>', content)
     
     # Store names and ranks in a dictionary
     name_rank = {}
     for rank, male_name, female_name in tuples:
+        # Only add the name if it is not already in the dictionary to avoid duplicate ranks
         if male_name not in name_rank:
             name_rank[male_name] = rank
         if female_name not in name_rank:
             name_rank[female_name] = rank
     
-    # Build the result list
+    # Build the result list starting with the year
     result = [year]
+    # Add each name-rank pair in alphabetical order
     for name in sorted(name_rank.keys()):
         result.append(f'{name} {name_rank[name]}')
     
     return result
-
 
 def main():
     # This command-line parsing code is provided.
@@ -84,7 +85,6 @@ def main():
         summary = True
         del args[0]
 
-    # +++your code here+++
     # For each filename, get the names, then either print the text output
     # or write it to a summary file
     for filename in args:
@@ -92,9 +92,11 @@ def main():
         text = '\n'.join(names) + '\n'
         
         if summary:
+            # Write the output to a summary file
             with open(filename + '.summary', 'w') as summary_file:
                 summary_file.write(text)
         else:
+            # Print the output to the console
             print(text)
 
 if __name__ == '__main__':
