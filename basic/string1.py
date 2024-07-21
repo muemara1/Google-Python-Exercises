@@ -33,7 +33,10 @@ def both_ends(s):
 
 
 # C. fix_start
-
+def fix_start(s):
+    first_char = s[0]
+    rest = s[1:].replace(first_char, '*')
+    return first_char + rest
 
 
 # D. mix_up
