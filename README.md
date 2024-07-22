@@ -1,49 +1,109 @@
-# This is a repository to track the progress of Advanced Programming course, at the THD Cham.
-
-## Information about the course:
-Course name Advanced Programming.
-
-Instructor: Prof. Dr. Tobias Schaffer.
-
-This is a course provided in the A.I. for Smart Sensors and Actuators to familiarize students to coding, coding standards, best practices and working with Git.
-
-The excercises are taken from: [Google's Python course](https://developers.google.com/edu/python/).
-
-Each exercises are done using seperate functions and tested with multiple testing cases.
-
-## Instructions for code execution:
-The python code is executed directly in the editor. Simply open in an editor of choice (e.g. Visual Studio Code) and run the files, and the result will be printed out via the Terminal.
-
-**Python version: Python 3.11.9**
-
-List of libraries used:
-- sys
-- os
-- re
-
-**Instrution to execute wordcount.py**
-- cd to relative path.
-- Run the commands in the terminal: `.\google-python-exercises\basic\wordcount.py` with arguments `--count` for count all the words or `--topcount` for count only the top 20 words, and file name such as `alice.txt` and `small.txt`.
-E.g. `.\google-python-exercises\basic\wordcount.py --topcount alice.txt`
-
-**Instrution to execute mimic.py**
-- cd to relative path.
-- Run the commands in the terminal: `.\google-python-exercises\basic\mimic.py` and file name such as `alice.txt` and `small.txt`.
-E.g. `.\google-python-exercises\basic\mimic.py small.txt`
-
-**Instrution to execute babynames.py**
-- cd to relative path.
-- Run the commands in the terminal: `.\google-python-exercises\basic\babynames.py` with the `--summaryfile` arguement and file name such as `baby2008.html` or `baby1998.html`.
-E.g. `.\google-python-exercises\babynames\babynames.py --summaryfile baby2006.html`
 
 
-Finished excercises:
-- [x] string1.py 
-- [x] string2.py 
-- [x] list1.py 
-- [x] list2.py 
-- [x] wordcount.py 
-- [x] mimic.py 
-- [x] babynames.py 
-- [ ] copyspecial.py
-- [ ] logpuzzle.py
+# Advanced Programming Course Project
+
+**Instructor:** Prof. Dr. Tobias Schaffer
+
+This repository is part of the Advanced Programming course in the A.I. for Smart Sensors and Actuators program. The exercises are sourced from [Google's Python Course](https://developers.google.com/edu/python/) and focus on coding standards, best practices, and version control using Git.
+
+## Project Overview
+
+**Date Written:** July 2024
+
+**Purpose:** This code was written to complete the assignments for the Advanced Programming course, aimed at improving proficiency in Python, understanding coding standards, and practicing effective version control with Git.
+
+**Author:** [Your Name] (optional)
+
+## Installation Instructions
+
+1. **Clone the Repository:**
+   ```sh
+   git clone https://github.com/yourusername/your-repository-name.git
+   ```
+2. **Navigate to the Project Directory:**
+   ```sh
+   cd your-repository-name
+   ```
+3. **Ensure Python 3.11.9 is installed.**
+
+4. **Install Required Libraries:**
+   ```sh
+   pip install -r requirements.txt
+   ```
+
+## Instructions for Running the Scripts
+
+### wordcount.py
+1. Change to the appropriate directory.
+2. Execute the script with one of the following commands in the terminal:
+   - To count all words: `.\google-python-exercises\basic\wordcount.py --count <filename>`
+   - To count the top 20 words: `.\google-python-exercises\basic\wordcount.py --topcount <filename>`
+   
+   Examples:
+   ```sh
+   .\google-python-exercises\basic\wordcount.py --count alice.txt
+   .\google-python-exercises\basic\wordcount.py --topcount small.txt
+   ```
+
+### mimic.py
+1. Change to the appropriate directory.
+2. Run the following command in the terminal:
+   ```sh
+   .\google-python-exercises\basic\mimic.py <filename>
+   ```
+
+   Examples:
+   ```sh
+   .\google-python-exercises\basic\mimic.py alice.txt
+   .\google-python-exercises\basic\mimic.py small.txt
+   ```
+
+### babynames.py
+1. Change to the appropriate directory.
+2. Run the script with the `--summaryfile` argument using the following command in the terminal:
+   ```sh
+   .\google-python-exercises\babynames\babynames.py --summaryfile <filename>
+   ```
+
+   Examples:
+   ```sh
+   .\google-python-exercises\babynames\babynames.py --summaryfile baby2006.html
+   .\google-python-exercises\babynames\babynames.py --summaryfile baby1998.html
+   ```
+
+## Tasks to Complete
+- [x] Complete `string1.py`
+- [x] Complete `string2.py`
+- [x] Complete `list1.py`
+- [x] Complete `list2.py`
+- [x] Complete `wordcount.py`
+- [x] Complete `mimic.py`
+- [x] Complete `babynames.py`
+
+### Excluded Tasks
+- `copyspecial`
+- `logpuzzle`
+
+## Version Information
+- **Python Version:** 3.11.9
+- **Libraries Used:**
+  - sys
+  - os
+  - re
+
+## Git Commit Guidelines
+- Use present tense and imperative language.
+- Make small and precise commits.
+- Examples of good commit messages:
+  - `Add project files`
+  - `Implement word count functionality`
+  - `Fix bug in mimic.py`
+
+## Contribution Guidelines
+- Comment your code where necessary.
+- Use Markdown styling in the README.md file.
+- Focus on creating a meaningful commit history.
+
+## Submission Deadline
+- **21.07.24**
+
