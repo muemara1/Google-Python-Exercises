@@ -12,7 +12,7 @@ This repository is part of the Advanced Programming course in the A.I. for Smart
 
 **Purpose:** This code was written to complete the assignments for the Advanced Programming course, aimed at improving proficiency in Python, understanding coding standards, and practicing effective version control with Git.
 
-**Author:** [Your Name] (optional)
+
 
 ## Installation Instructions
 
